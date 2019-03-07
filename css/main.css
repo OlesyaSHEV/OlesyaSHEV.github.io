@@ -180,6 +180,15 @@
 .triangleone {
   margin-left: 11rem;
   margin-top: 3rem; }
+  @media (max-width: 480px) {
+    .triangleone {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .trianglefourth {
   display: -webkit-box;
@@ -190,6 +199,13 @@
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   margin-right: 11rem; }
+  @media (max-width: 480px) {
+    .trianglefourth {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin-left: 0.4rem; } }
 
 .trianglesecond {
   margin-left: 17rem;
@@ -198,6 +214,9 @@
     .trianglesecond {
       margin-left: 5rem;
       padding-top: 3rem; } }
+  @media (max-width: 480px) {
+    .trianglesecond {
+      margin-left: -9rem; } }
 
 .trianglethird {
   margin-left: 4rem;
@@ -219,6 +238,9 @@
   flex-direction: row-reverse;
   margin-right: 4rem;
   margin-top: -.65rem; }
+  @media (max-width: 480px) {
+    .trianglefifth {
+      margin-right: -5rem; } }
 
 .maincontent {
   margin: 0 auto;
@@ -493,6 +515,7 @@
   margin-top: -8rem; }
   @media (max-width: 480px) {
     .about__circles__two {
+      display: none;
       margin-top: -41rem;
       margin-left: -1rem;
       margin-bottom: 27rem; } }

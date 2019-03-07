@@ -164,11 +164,19 @@ $phones: 480px;
    .triangleone{
        margin-left: 11rem;
        margin-top: 3rem;
+       @include phones{
+        flex-direction: row-reverse;
+        display: flex;
+       }
    }
    .trianglefourth{
        display: flex;
        flex-direction: row-reverse;
        margin-right: 11rem;
+       @include phones{
+           flex-direction:row; 
+           margin-left: 0.4rem;
+       }
    }
    .trianglesecond{
        margin-left: 17rem;
@@ -176,6 +184,9 @@ $phones: 480px;
        @include tablets{
         margin-left: 5rem;
         padding-top: 3rem;
+       }
+       @include phones{
+           margin-left: -9rem;
        }
    }
    .trianglethird{
@@ -193,6 +204,9 @@ $phones: 480px;
        flex-direction: row-reverse;
        margin-right: 4rem;
        margin-top: -.65rem;
+       @include phones{
+           margin-right: -5rem;
+       }
    }
    .maincontent{
     
@@ -454,7 +468,7 @@ height:300px;
 .about__circles__two{
     margin-top: -8rem;
     @include phones{
-        
+        display: none;
         margin-top: -41rem;
     margin-left: -1rem;
     margin-bottom: 27rem;
